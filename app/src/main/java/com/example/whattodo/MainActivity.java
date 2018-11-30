@@ -21,29 +21,13 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, FragmentCommunicator{
-
-             public FragmentCommunicator dataPasser;
-             private FragmentAddGoal fragmentAddGoal;
-             public static ArrayList<Fragment> listFragments;
-             private CustomFragmentAdapter customFragmentAdapter;
-             private ViewPager viewPager;
-
+        implements NavigationView.OnNavigationItemSelectedListener{
              @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
                 DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -119,20 +103,4 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    @Override
-    public void passStringDataToFragment(String key, String someValue) {
-
-    }
-
-    @Override
-    public void passIntDataToFragment(String key, int someValue) {
-
-    }
-
-//    @Override
-//    public void onDataPass(String data) {
-//        Log.d("LOG","hello " + data);
-//    }
-
 }

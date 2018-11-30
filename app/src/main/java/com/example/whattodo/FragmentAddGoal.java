@@ -27,7 +27,6 @@ public class FragmentAddGoal extends Fragment implements View.OnClickListener{
 
     public Context context;
 
-    FragmentCommunicator dataPasser;
     private PopupWindow popupWindow;
     private LinearLayout linearLayout;
     private String[] frequecyOptions;
@@ -45,7 +44,6 @@ public class FragmentAddGoal extends Fragment implements View.OnClickListener{
     private static final String GOAL_ICON = "goal icon";
     private static final String GOAL_COLOR = "goal color";
 
-    private ActivityCommunicator activityCommunicator;
     private String activityAssignedValue = "";
 
 
