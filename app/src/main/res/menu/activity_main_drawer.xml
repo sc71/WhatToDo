@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="@string/lists">
-        <menu>
+    <!--<item android:title="@string/lists">-->
+        <!--<menu>-->
 
-        </menu>
-    </item>
+        <!--</menu>-->
+    <!--</item>-->
 
-    <item android:title="@string/goals">
-        <menu>
+    <!--<item android:title="@string/goals">-->
+        <!--<menu>-->
 
-        </menu>
-    </item>
+        <!--</menu>-->
+    <!--</item>-->
 
     <group android:checkableBehavior="single">
         <item
